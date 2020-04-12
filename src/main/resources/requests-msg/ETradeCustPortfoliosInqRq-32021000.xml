@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eTradeCustPortfoliosInqRq>
+	<MsgRqHdr>
+		<RqUID>ITP20200405513E939E9C2ACC09</RqUID>
+		<SCId>ITP</SCId>
+		<FuncId>32021000</FuncId>
+		<AgentId>U050501592</AgentId>
+	</MsgRqHdr>
+	<Body>
+		<PortfolioNum>4500193745</PortfolioNum>
+		<PortfolioType>IP</PortfolioType>
+		<Symbol>4300</Symbol>
+	</Body>
+</eTradeCustPortfoliosInqRq>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UsrAuthentRs>
+	<MsgRsHdr>
+		<StatusCode>I000000</StatusCode>
+		<RqUID>ITP201911197B94DDF8F67CBF2A</RqUID>
+	</MsgRsHdr>
+	<Body>
+		<OneTmPswdFlg>N</OneTmPswdFlg>
+		<BankUsrInfo>
+			<UsrId>NAIF1</UsrId>
+			<LangPref>En</LangPref>
+			<DeptCode>SA0010001</DeptCode>
+			<NumOfFailedLogins>0</NumOfFailedLogins>
+			<LastLoginTmstmp>2019-11-19 16:21:29</LastLoginTmstmp>
+			<RoleInfo>
+				<RoleId>901</RoleId>
+			</RoleInfo>
+			<RoleInfo>
+				<RoleId>902</RoleId>
+			</RoleInfo>
+			<RoleInfo>
+				<RoleId>903</RoleId>
+			</RoleInfo>
+			<RoleInfo>
+				<RoleId>904</RoleId>
+			</RoleInfo>
+			<RoleInfo>
+				<RoleId>905</RoleId>
+			</RoleInfo>
+			<RoleInfo>
+				<RoleId>906</RoleId>
+			</RoleInfo>
+			<RoleInfo>
+				<RoleId>907</RoleId>
+			</RoleInfo>
+			<RoleInfo>
+				<RoleId>908</RoleId>
+			</RoleInfo>
+			<RoleInfo>
+				<RoleId>909</RoleId>
+			</RoleInfo>
+			<RoleInfo>
+				<RoleId>910</RoleId>
+			</RoleInfo>
+			<RoleInfo>
+				<RoleId>911</RoleId>
+			</RoleInfo>
+		</BankUsrInfo>
+	</Body>
+</UsrAuthentRs>

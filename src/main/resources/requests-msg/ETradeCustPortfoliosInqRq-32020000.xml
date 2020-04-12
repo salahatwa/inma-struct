@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eTradeCustPortfoliosInqRq>
+   <MsgRqHdr>
+      <RqUID>ITP20200405D59E9C9C50D64732</RqUID>
+      <SCId>ITP</SCId>
+      <FuncId>32020000</FuncId>
+      <CustId>
+         <POI>
+            <POINum>2063219816</POINum>
+         </POI>
+      </CustId>
+      <AgentId>U050501592</AgentId>
+   </MsgRqHdr>
+   <Body />
+</eTradeCustPortfoliosInqRq>
+

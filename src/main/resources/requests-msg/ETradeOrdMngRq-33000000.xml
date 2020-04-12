@@ -1,0 +1,25 @@
+<eTradeOrdMngRq>
+	<MsgRqHdr>
+		<RqUID>ITP20200405120022384502EA96</RqUID>
+		<SCId>ITP</SCId>
+		<FuncId>33000000</FuncId>
+		<AgentId>U716070126</AgentId>
+	</MsgRqHdr>
+	<Body>
+		<eTradeOrdDtls>
+			<Product>LE</Product>
+			<PortfolioNum>4502826359</PortfolioNum>
+			<Symbol>1120</Symbol>
+			<OrdSide>SSL</OrdSide>
+			<OrdType>2</OrdType>
+			<TIFType>6</TIFType>
+			<OrdQty>2703</OrdQty>
+			<CurAmt>
+				<Amt>54.60</Amt>
+			</CurAmt>
+			<MinFillQty>2703</MinFillQty>
+			<MaxFloor />
+			<ExpDt>2020-04-05</ExpDt>
+		</eTradeOrdDtls>
+	</Body>
+</eTradeOrdMngRq>

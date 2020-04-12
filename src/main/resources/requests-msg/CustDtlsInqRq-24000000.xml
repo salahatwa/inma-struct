@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustDtlsInqRq>
+	<MsgRqHdr>
+		<RqUID>ITP20200405DA7D1F318A1F4A2E</RqUID>
+		<SCId>ITP</SCId>
+		<FuncId>24000000</FuncId>
+		<CustId>
+			<POI>
+				<POINum>1040703744</POINum>
+			</POI>
+		</CustId>
+		<AgentId>U716070126</AgentId>
+	</MsgRqHdr>
+</CustDtlsInqRq>

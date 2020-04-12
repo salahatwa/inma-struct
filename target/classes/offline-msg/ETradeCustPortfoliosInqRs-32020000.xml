@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eTradeCustPortfoliosInqRs>
+	<MsgRsHdr>
+		<StatusCode>I000000</StatusCode>
+		<RqUID>ITP20200405ED0470FA3336449</RqUID>
+	</MsgRsHdr>
+	<Body>
+		<RecCtrlOut>
+			<MatchedRecs>3</MatchedRecs>
+			<SentRecs>2</SentRecs>
+		</RecCtrlOut>
+		<PortfoliosList>
+			<PortfolioDtls>
+				<PortfolioNum>122970-1</PortfolioNum>
+				<PortfolioType>IP</PortfolioType>
+				<PortfolioName>ALSHEMAS,MOSAEDY</PortfolioName>
+				<SAMAAcctNum>4501191268</SAMAAcctNum>
+				<AcctId>
+					<AcctNum>100122970010</AcctNum>
+					<AcctType>IN</AcctType>
+				</AcctId>
+			</PortfolioDtls>
+			<PortfolioDtls>
+				<PortfolioNum>122970-3</PortfolioNum>
+				<PortfolioType>IP</PortfolioType>
+				<PortfolioName>ALSHEMAS,MOSAEDY</PortfolioName>
+				<SAMAAcctNum>4502810163</SAMAAcctNum>
+				<AcctId>
+					<AcctNum>100122970045</AcctNum>
+					<AcctType>IN</AcctType>
+				</AcctId>
+			</PortfolioDtls>
+		</PortfoliosList>
+	</Body>
+</eTradeCustPortfoliosInqRs>

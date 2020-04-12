@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eTradeOrdMngRs>
+	<MsgRsHdr>
+		<StatusCode>I000000</StatusCode>
+		<RqUID>ITP20200405120022384502EA96</RqUID>
+		<SPRefNum>2009663MKR</SPRefNum>
+	</MsgRsHdr>
+	<Body>
+		<CustLimit />
+	</Body>
+</eTradeOrdMngRs>

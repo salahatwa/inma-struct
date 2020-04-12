@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eTradePreOrdDtlsInqRs>
+	<MsgRsHdr>
+		<StatusCode>I000000</StatusCode>
+		<RqUID>ITP20200405CB95635AA8A9A9FB</RqUID>
+	</MsgRsHdr>
+	<Body>
+		<BankComm>65.63</BankComm>
+		<BankCommVAT>3.84</BankCommVAT>
+		<BankCommVATPercentage>5</BankCommVATPercentage>
+		<ExchangeFees>31.25</ExchangeFees>
+		<TotalComm>100.72</TotalComm>
+		<TotTradeAmt>62399.28</TotTradeAmt>
+	</Body>
+</eTradePreOrdDtlsInqRs>

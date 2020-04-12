@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eTradeCustPortfoliosInqRs>
+	<MsgRsHdr>
+		<StatusCode>I000000</StatusCode>
+		<RqUID>ITP20200405513E939E9C2ACC09</RqUID>
+	</MsgRsHdr>
+	<Body>
+		<RecCtrlOut>
+			<MatchedRecs>1</MatchedRecs>
+			<SentRecs>1</SentRecs>
+		</RecCtrlOut>
+		<PortfoliosList>
+			<PortfolioDtls>
+				<PortfolioNum>22244-1</PortfolioNum>
+				<PortfolioName>ALESSI,MOHAMMEDA</PortfolioName>
+				<SAMAAcctNum>4500193745</SAMAAcctNum>
+				<AcctId>
+					<AcctNum>100022244016</AcctNum>
+				</AcctId>
+				<PortfolioPositionAmt>12514.42</PortfolioPositionAmt>
+				<TotalCost>8825.2</TotalCost>
+				<TotalMrktVal>7569</TotalMrktVal>
+				<TotalUnrealizedProfitLoss>-1256.2</TotalUnrealizedProfitLoss>
+				<TotalRealizedProfitLoss>78021.08</TotalRealizedProfitLoss>
+				<DiscountRate>0</DiscountRate>
+				<MobileNum>0559490996</MobileNum>
+				<MarginLimit />
+				<POINum>1026105328</POINum>
+				<AvailBal>4945.42</AvailBal>
+				<BuyingPwr>4945.42</BuyingPwr>
+				<OutstandBuyAmt>0</OutstandBuyAmt>
+				<OutstandSellAmt>0</OutstandSellAmt>
+				<ExcBuyAmt>0</ExcBuyAmt>
+				<ExcSellAmt>0</ExcSellAmt>
+				<TradeSecsList>
+				<TradeSec>
+						<Symbol>1020</Symbol>
+						<SecEnName>Atwa</SecEnName>
+						<SecArName>??? ???????</SecArName>
+						<OwnedQuantity>900</OwnedQuantity>
+						<OutstandSellQuantity>0</OutstandSellQuantity>
+						<OutstandBuyQuantity>0</OutstandBuyQuantity>
+						<PledgedQuantity>0</PledgedQuantity>
+						<AvailQuantity>900</AvailQuantity>
+						<AvgCostPrice>9.8057777777777</AvgCostPrice>
+						<MrktPrice>8.41</MrktPrice>
+						<TotalCost>8825.20</TotalCost>
+						<TotalMrktVal>7569</TotalMrktVal>
+						<UnrealizedProfitLoss>-1256.2</UnrealizedProfitLoss>
+						<RealizedProfitLoss>78021.08</RealizedProfitLoss>
+						<UnrealizedProfitLossPercen>-14.23423831754</UnrealizedProfitLossPercen>
+						<RealizedProfitLossPercen>884.07152245841</RealizedProfitLossPercen>
+						<UnsettledBuyQuantity>0</UnsettledBuyQuantity>
+						<UnsettledSellQuantity>0</UnsettledSellQuantity>
+					</TradeSec>
+					<TradeSec>
+						<Symbol>4300</Symbol>
+						<SecEnName>DAR ALARKAN</SecEnName>
+						<SecArName>??? ???????</SecArName>
+						<OwnedQuantity>900</OwnedQuantity>
+						<OutstandSellQuantity>0</OutstandSellQuantity>
+						<OutstandBuyQuantity>0</OutstandBuyQuantity>
+						<PledgedQuantity>0</PledgedQuantity>
+						<AvailQuantity>900</AvailQuantity>
+						<AvgCostPrice>9.8057777777777</AvgCostPrice>
+						<MrktPrice>8.41</MrktPrice>
+						<TotalCost>8825.20</TotalCost>
+						<TotalMrktVal>7569</TotalMrktVal>
+						<UnrealizedProfitLoss>-1256.2</UnrealizedProfitLoss>
+						<RealizedProfitLoss>78021.08</RealizedProfitLoss>
+						<UnrealizedProfitLossPercen>-14.23423831754</UnrealizedProfitLossPercen>
+						<RealizedProfitLossPercen>884.07152245841</RealizedProfitLossPercen>
+						<UnsettledBuyQuantity>0</UnsettledBuyQuantity>
+						<UnsettledSellQuantity>0</UnsettledSellQuantity>
+					</TradeSec>
+				</TradeSecsList>
+			</PortfolioDtls>
+		</PortfoliosList>
+	</Body>
+</eTradeCustPortfoliosInqRs>

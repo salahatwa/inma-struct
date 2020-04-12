@@ -1,0 +1,16 @@
+<eTradePreOrdDtlsInqRq>
+	<MsgRqHdr>
+		<RqUID>ITP2020040519966692B92BF456</RqUID>
+		<SCId>ITP</SCId>
+		<FuncId>32130000</FuncId>
+		<AgentId>U060501967</AgentId>
+	</MsgRqHdr>
+	<Body>
+		<PortfolioNum>278599-1</PortfolioNum>
+		<Symbol>2360</Symbol>
+		<OrdType>2</OrdType>
+		<UnitPrice>38.85</UnitPrice>
+		<OrdSide>SPR</OrdSide>
+		<OrdQty>200</OrdQty>
+	</Body>
+</eTradePreOrdDtlsInqRq>

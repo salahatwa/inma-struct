@@ -1,0 +1,24 @@
+<eTradeOrdsInqRq>
+	<MsgRqHdr>
+		<RqUID>ITP202004058789B3A23803FBBB</RqUID>
+		<SCId>ITP</SCId>
+		<FuncId>32000010</FuncId>
+		<CustId />
+		<AgentId>U030300635</AgentId>
+	</MsgRqHdr>
+	<Body>
+		<Product>LE</Product>
+		<PortfolioNum />
+		<Symbol />
+		<OrdSide />
+		<OrdStatus />
+		<DtRange>
+			<StartDt>2020-04-05</StartDt>
+			<EndDt>2020-04-05</EndDt>
+		</DtRange>
+		<RecCtrlIn>
+			<MaxRecs>50</MaxRecs>
+			<Offset>0</Offset>
+		</RecCtrlIn>
+	</Body>
+</eTradeOrdsInqRq>

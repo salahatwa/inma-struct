@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UsrAuthentRq>
+	<MsgRqHdr>
+		<RqUID>ITP2020040530940FF0627BCEF6</RqUID>
+		<SCId>ITP</SCId>
+		<FuncId>10080000</FuncId>
+	</MsgRqHdr>
+	<Body>
+		<LoginId>
+			<LoginAttribVal>BMBINDHAMNAH</LoginAttribVal>
+			<LoginAttribType>4</LoginAttribType>
+		</LoginId>
+		<Sec>
+			<Info>37FDD84DD35D788F465D6AA51E3F6FAD5A5DF3E0B92C2E7513A5B55B80504AE3
+			</Info>
+			<InfoType>1</InfoType>
+		</Sec>
+	</Body>
+</UsrAuthentRq>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustDtlsInqRs>
+	<MsgRsHdr>
+		<StatusCode>I000000</StatusCode>
+		<RqUID>ITP20200405DA7D1F318A1F4A2E</RqUID>
+		<MsgRecDt>2020-04-05</MsgRecDt>
+	</MsgRsHdr>
+	<Body>
+		<CIF>31685</CIF>
+		<AlinmaId>00000308653</AlinmaId>
+		<CustType>I</CustType>
+		<POIRec>
+			<POI>
+				<POINum>1040703744</POINum>
+				<POIType>NAT</POIType>
+			</POI>
+		</POIRec>
+		<FirstName>????</FirstName>
+		<FatherName>?????????</FatherName>
+		<FamilyName>??????</FamilyName>
+		<FullName>???? ????????? ??????</FullName>
+		<LangPref>Ar</LangPref>
+		<Gender>M</Gender>
+		<NationalityCode>SA</NationalityCode>
+		<OpenDt>2019-12-24</OpenDt>
+		<OpenDtHjr>1441-04-27</OpenDtHjr>
+		<SAMAStatus>FRZNIPO</SAMAStatus>
+		<CustStatus>ACTIVE</CustStatus>
+		<BranchId>SA0010001</BranchId>
+		<ResidenceCountryCode>SA</ResidenceCountryCode>
+		<PhoneInfo>
+			<PhoneCategory>3</PhoneCategory>
+			<PhoneType>M</PhoneType>
+			<PhoneCountryCode>966</PhoneCountryCode>
+			<PhoneNum>591193111</PhoneNum>
+		</PhoneInfo>
+	</Body>
+</CustDtlsInqRs>

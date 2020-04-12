@@ -1,0 +1,12 @@
+<SecsInqRq>
+	<MsgRqHdr>
+		<RqUID>ITP20200405E193AE5F39827C3F</RqUID>
+		<SCId>ITP</SCId>
+		<FuncId>32110000</FuncId>
+		<AgentId>U060501967</AgentId>
+	</MsgRqHdr>
+	<Body>
+		<Symbol>2010</Symbol>
+		<ProductCode>LSH</ProductCode>
+	</Body>
+</SecsInqRq>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SecsInqRs>
+	<MsgRsHdr>
+		<StatusCode>I000000</StatusCode>
+		<RqUID>ITP20200405691BC1CDD9FFE23F</RqUID>
+	</MsgRsHdr>
+	<Body>
+		<SecList>
+			<SecRec>
+				<Symbol>1120</Symbol>
+				<SecArName>???? ???????</SecArName>
+				<SecEnName>Al Rajhi Bank</SecEnName>
+				<MrktCode>510</MrktCode>
+				<Tradable>Y</Tradable>
+				<LoserCompany>N</LoserCompany>
+				<LosePercen />
+				<SettlementDays>2</SettlementDays>
+				<LoserAlert>N</LoserAlert>
+				<TradableRights>N</TradableRights>
+				<TradableRightsAlert>N</TradableRightsAlert>
+				<LastPrice>.00</LastPrice>
+				<PriceChangeAmt>.00</PriceChangeAmt>
+				<PriceChangeRate>.00</PriceChangeRate>
+				<MinPriceLimit>49.05</MinPriceLimit>
+				<MaxPriceLimit>59.90</MaxPriceLimit>
+				<OpenPrice>.00</OpenPrice>
+				<PrevClosure>54.50</PrevClosure>
+				<BestBidPrice>.00</BestBidPrice>
+				<BestBidQty>46990</BestBidQty>
+				<BestAskPrice>.00</BestAskPrice>
+				<BestAskQty>1634</BestAskQty>
+				<RiskRate>2.00</RiskRate>
+				<TradedVol>27</TradedVol>
+				<MLEnabled>Y</MLEnabled>
+			</SecRec>
+		</SecList>
+	</Body>
+</SecsInqRs>
