@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.inma.itp.config.annotations.CurrentUser;
 import com.inma.itp.config.secuirty.UserPrincipal;
-import com.inma.itp.order.dao.OrderDao;
 import com.inma.itp.order.models.dto.CommissionRequest;
 import com.inma.itp.order.models.dto.OrderInquiry;
 import com.inma.itp.order.models.dto.OrderRequest;
+import com.inma.itp.order.service.OrderService;
 
 /**
  * Api to for order managing
@@ -27,7 +27,7 @@ import com.inma.itp.order.models.dto.OrderRequest;
 public class OrderController {
 
 	@Autowired
-	private OrderDao orderDao;
+	private OrderService orderService;
 
 	/**
 	 * Get all commission details
@@ -40,7 +40,7 @@ public class OrderController {
 	public ResponseEntity<?> getCommissionDetails(@CurrentUser UserPrincipal currentUser,
 			@RequestBody CommissionRequest commReq) {
 
-		return ResponseEntity.ok(orderDao.getCommissionDetails(currentUser.getId(), commReq));
+		return ResponseEntity.ok(orderService.getCommissionDetails(currentUser.getId(), commReq));
 	}
 
 	/**
@@ -53,7 +53,7 @@ public class OrderController {
 	@PostMapping("/execute")
 	public ResponseEntity<?> executeOrder(@CurrentUser UserPrincipal currentUser, @RequestBody OrderRequest ordReq) {
 
-		return ResponseEntity.ok(orderDao.executeOrder(currentUser.getId(), ordReq));
+		return ResponseEntity.ok(orderService.executeOrder(currentUser.getId(), ordReq));
 	}
 
 	/**
@@ -67,11 +67,12 @@ public class OrderController {
 	public ResponseEntity<?> getOrderStatus(@CurrentUser UserPrincipal currentUser,
 			@PathVariable("ordRefNum") String ordRefNum) {
 
-		return ResponseEntity.ok(orderDao.getOrderStatus(currentUser.getId(), ordRefNum));
+		return ResponseEntity.ok(orderService.getOrderStatus(currentUser.getId(), ordRefNum));
 	}
 
 	/**
 	 * Inquiry order
+	 * 
 	 * @param currentUser
 	 * @param inqReq
 	 * @return
@@ -79,7 +80,7 @@ public class OrderController {
 	@PostMapping("/inquiry")
 	public ResponseEntity<?> inquiryOrders(@CurrentUser UserPrincipal currentUser, @RequestBody OrderInquiry inqReq) {
 
-		return ResponseEntity.ok(orderDao.inquiryOrders(currentUser.getId(), inqReq));
+		return ResponseEntity.ok(orderService.inquiryOrders(currentUser.getId(), inqReq));
 	}
 
 }

@@ -25,14 +25,11 @@ public class PortfolioDao {
 	 * @param walletNumber
 	 * @return wallet details
 	 */
-	public PortfolioDtls getPortfolioDetailsByStockAndPortfolioNumber(String userId, String stockSymbol,
-			String portfolioNumber) {
+	public PortfolioDtls getPortfolioDetailsByStockAndPortfolioNumber(ETradeCustPortfoliosInqRq rq, String userId) {
 
-		ETradeCustPortfoliosInqRq request = new ETradeCustPortfoliosInqRq(Constants.FUNCTION_PORTFOLIO_INQ, userId, null);
-		request.setPortfolioNum(portfolioNumber);
-		request.setPortfolioType(Constants.PORTFOLIO_TYPE);
-		request.setSymbol(stockSymbol);
-		ETradeCustPortfoliosInqRs rs = msgTemplateService.sendMessage(request, ETradeCustPortfoliosInqRs.class);
+		rq.setFuncId(Constants.FUNCTION_PORTFOLIO_INQ);
+		rq.setAgentId(userId);
+		ETradeCustPortfoliosInqRs rs = msgTemplateService.sendMessage(rq, ETradeCustPortfoliosInqRs.class);
 
 		return rs.getPortfolioDtls().get(0);
 	}
@@ -44,13 +41,15 @@ public class PortfolioDao {
 	 * @param poiNumber
 	 * @return List of wallets details
 	 */
-	public List<PortfolioDtls> getAllPortfolioDetailsForPoiNumber(String userId, String poiNumber) {
+	public List<PortfolioDtls> getAllPortfolioDetailsForPoiNumber(ETradeCustPortfoliosInqRq rq, String userId,
+			String poiNum) {
 
-		ETradeCustPortfoliosInqRq request = new ETradeCustPortfoliosInqRq(Constants.FUNCTION_PORTFOLIO_POI_INQ, userId, poiNumber);
-		ETradeCustPortfoliosInqRs rs = msgTemplateService.sendMessage(request, ETradeCustPortfoliosInqRs.class);
+		rq.setFuncId(Constants.FUNCTION_PORTFOLIO_POI_INQ);
+		rq.setAgentId(userId);
+		rq.setPoiNum(poiNum);
+		ETradeCustPortfoliosInqRs rs = msgTemplateService.sendMessage(rq, ETradeCustPortfoliosInqRs.class);
 
 		return rs.getPortfolioDtls();
 	}
 
-	
 }

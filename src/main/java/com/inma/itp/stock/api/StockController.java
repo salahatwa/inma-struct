@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.inma.itp.config.annotations.CurrentUser;
 import com.inma.itp.config.secuirty.UserPrincipal;
 import com.inma.itp.stock.dao.StockDao;
+import com.inma.itp.stock.service.StockService;
 
 /**
  * Api to return stock details by stock symbol
@@ -22,11 +23,11 @@ import com.inma.itp.stock.dao.StockDao;
 public class StockController {
 
 	@Autowired
-	private StockDao stockDao;
+	private StockService stockService;
 
 	@GetMapping("/{symbol}/details")
 	public ResponseEntity<?> getStockDetails(@CurrentUser UserPrincipal currentUser,
 			@PathVariable("symbol") String symbol) {
-		return ResponseEntity.ok(stockDao.getStockDetails(currentUser.getId(), symbol));
+		return ResponseEntity.ok(stockService.getStockDetails(currentUser.getId(), symbol));
 	}
 }

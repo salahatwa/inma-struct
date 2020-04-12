@@ -4,15 +4,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.inma.itp.config.annotations.CurrentUser;
 import com.inma.itp.config.secuirty.UserPrincipal;
-import com.inma.itp.order.models.dto.CommissionRequest;
-import com.inma.itp.portfolio.dao.PortfolioDao;
+import com.inma.itp.portfolio.service.PortfolioService;
 
 /**
  * Api to return wallet details
@@ -25,7 +22,7 @@ import com.inma.itp.portfolio.dao.PortfolioDao;
 public class PortfolioController {
 
 	@Autowired
-	private PortfolioDao portfolioDao;
+	private PortfolioService portfolioService;
 
 	/**
 	 * Get all wallet details by stock number and wallet number
@@ -39,7 +36,7 @@ public class PortfolioController {
 	public ResponseEntity<?> getPortfolioDetailsByStockAndPortfolioNumber(@CurrentUser UserPrincipal currentUser,
 			@PathVariable("stockSymbol") String stockSymbol, @PathVariable("portfolioNumber") String portfolioNumber) {
 
-		return ResponseEntity.ok(portfolioDao.getPortfolioDetailsByStockAndPortfolioNumber(currentUser.getId(),
+		return ResponseEntity.ok(portfolioService.getPortfolioDetailsByStockAndPortfolioNumber(currentUser.getId(),
 				stockSymbol, portfolioNumber));
 	}
 
@@ -54,8 +51,7 @@ public class PortfolioController {
 	public ResponseEntity<?> getAllPortfolioDetailsForPoiNumber(@CurrentUser UserPrincipal currentUser,
 			@PathVariable("poiNumber") String poiNumber) {
 
-		return ResponseEntity.ok(portfolioDao.getAllPortfolioDetailsForPoiNumber(currentUser.getId(), poiNumber));
+		return ResponseEntity.ok(portfolioService.getAllPortfolioDetailsForPoiNumber(currentUser.getId(), poiNumber));
 	}
 
-	
 }

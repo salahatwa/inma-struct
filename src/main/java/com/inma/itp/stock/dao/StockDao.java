@@ -16,12 +16,10 @@ public class StockDao {
 	@Autowired
 	private MessageTemplateService msgTemplateService;
 
-	public StockDetails getStockDetails(String userId, String symbol) {
-
-		SecsInqRq request = new SecsInqRq(Constants.FUNCTION_SEC, userId);
-		request.setProductCode(Constants.PRODUCT_CODE);
-		request.setSymbol(symbol);
-		SecsInqRs rs = msgTemplateService.sendMessage(request, SecsInqRs.class);
+	public StockDetails getStockDetails(SecsInqRq rq, String userId) {
+		rq.setFuncId(Constants.FUNCTION_SEC);
+		rq.setAgentId(userId);
+		SecsInqRs rs = msgTemplateService.sendMessage(rq, SecsInqRs.class);
 
 		StockDetails stockDetails = new StockDetails();
 		BeanUtils.copyProperties(rs.getSecRec().get(0), stockDetails);

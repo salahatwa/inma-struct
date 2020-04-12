@@ -9,13 +9,13 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.stereotype.Component;
 
-import com.inma.itp.auth.dao.AuthDao;
+import com.inma.itp.auth.service.AuthService;
 
 @Component
 public class CustomAuthenticationProvider implements AuthenticationProvider {
 	
 	@Autowired
-	private AuthDao authDao;
+	private AuthService authService;
  
     @Override
     public Authentication authenticate(Authentication authentication) 
@@ -26,7 +26,7 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
          
         
         return new UsernamePasswordAuthenticationToken(
-        		authDao.login(name, password), password, new ArrayList<>());
+        		authService.login(name, password), password, new ArrayList<>());
     } 
     @Override
     public boolean supports(Class<?> authentication) {

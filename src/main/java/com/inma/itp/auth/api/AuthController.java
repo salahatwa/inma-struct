@@ -9,20 +9,20 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.inma.itp.auth.dao.AuthDao;
 import com.inma.itp.auth.models.dto.LoginRequest;
+import com.inma.itp.auth.service.AuthService;
 
 @RestController
 @RequestMapping("${api.context.path}/auth")
 public class AuthController {
 
 	@Autowired
-	private AuthDao authDao;
+	private AuthService authService;
 
 	@PostMapping("/signin")
 	public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginRequest loginReq) {
 
-		return ResponseEntity.ok(authDao.login(loginReq.getUsername(), loginReq.getPassword()));
+		return ResponseEntity.ok(authService.login(loginReq.getUsername(), loginReq.getPassword()));
 	}
 
 }

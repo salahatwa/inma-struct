@@ -1,8 +1,6 @@
 package com.inma.itp.config.secuirty;
 
 import java.io.IOException;
-import java.util.Objects;
-import java.util.Optional;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
@@ -19,9 +17,7 @@ import org.springframework.security.web.authentication.WebAuthenticationDetailsS
 import org.springframework.util.StringUtils;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import com.inma.itp.auth.dao.AuthDao;
-import com.inma.itp.config.exception.ResourceNotFoundException;
-import com.inma.itp.config.models.User;
+import com.inma.itp.auth.service.AuthService;
 
 /**
  * Authentication filter for every request
@@ -35,7 +31,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 	private JwtTokenProvider tokenProvider;
 
 	@Autowired
-	private AuthDao authService;
+	private AuthService authService;
 
 	private static final Logger logger = LoggerFactory.getLogger(JwtAuthenticationFilter.class);
 
