@@ -6,17 +6,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import com.inma.itp.config.models.queues.DtRange;
+import com.inma.itp.config.model.bussinessObject.DtRange;
 import com.inma.itp.config.utils.Constants;
 import com.inma.itp.order.dao.OrderDao;
-import com.inma.itp.order.models.dto.CommissionRequest;
-import com.inma.itp.order.models.dto.CommissionResponse;
-import com.inma.itp.order.models.dto.OrderInquiry;
-import com.inma.itp.order.models.dto.OrderRequest;
-import com.inma.itp.order.models.queue.ETradeOrdMngRq;
-import com.inma.itp.order.models.queue.ETradeOrdsInqRq;
-import com.inma.itp.order.models.queue.ETradeOrdsInqRs.ETradeOrdDtls;
-import com.inma.itp.order.models.queue.ETradePreOrdDtlsInqRq;
+import com.inma.itp.order.model.bussinessObject.ETradeOrdMngRq;
+import com.inma.itp.order.model.bussinessObject.ETradeOrdsInqRq;
+import com.inma.itp.order.model.bussinessObject.ETradePreOrdDtlsInqRq;
+import com.inma.itp.order.model.bussinessObject.ETradeOrdsInqRs.ETradeOrdDtls;
+import com.inma.itp.order.model.dto.CommissionRequest;
+import com.inma.itp.order.model.dto.CommissionResponse;
+import com.inma.itp.order.model.dto.OrderInquiry;
+import com.inma.itp.order.model.dto.OrderRequest;
 
 @Service
 public class OrderService {
@@ -64,7 +64,7 @@ public class OrderService {
 		return rs;
 	}
 
-	public List<com.inma.itp.order.models.queue.ETradeOrdsInqRs.ETradeOrdDtls> getOrderStatus(String userId,
+	public List<com.inma.itp.order.model.bussinessObject.ETradeOrdsInqRs.ETradeOrdDtls> getOrderStatus(String userId,
 			String ordRefNum) {
 		ETradeOrdsInqRq request = new ETradeOrdsInqRq();
 		request.setProduct(Constants.PRODUCT);
@@ -81,7 +81,7 @@ public class OrderService {
 	}
 
 	@PostMapping("/inquiry")
-	public List<com.inma.itp.order.models.queue.ETradeOrdsInqRs.ETradeOrdDtls> inquiryOrders(String userId,
+	public List<com.inma.itp.order.model.bussinessObject.ETradeOrdsInqRs.ETradeOrdDtls> inquiryOrders(String userId,
 			OrderInquiry inqReq) {
 
 		ETradeOrdsInqRq request = new ETradeOrdsInqRq();

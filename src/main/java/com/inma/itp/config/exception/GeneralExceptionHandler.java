@@ -17,7 +17,7 @@ import org.springframework.web.method.annotation.MethodArgumentTypeMismatchExcep
 import org.springframework.web.servlet.NoHandlerFoundException;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
-import com.inma.itp.config.models.ApiError;
+import com.inma.itp.config.model.ApiError;
 
 import lombok.extern.slf4j.Slf4j;
 

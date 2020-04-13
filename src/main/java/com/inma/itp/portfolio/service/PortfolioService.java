@@ -7,8 +7,8 @@ import org.springframework.stereotype.Service;
 
 import com.inma.itp.config.utils.Constants;
 import com.inma.itp.portfolio.dao.PortfolioDao;
-import com.inma.itp.portfolio.models.queue.ETradeCustPortfoliosInqRq;
-import com.inma.itp.portfolio.models.queue.ETradeCustPortfoliosInqRs.PortfolioDtls;
+import com.inma.itp.portfolio.model.bussinessObject.ETradeCustPortfoliosInqRq;
+import com.inma.itp.portfolio.model.bussinessObject.ETradeCustPortfoliosInqRs.PortfolioDtls;
 
 @Service
 public class PortfolioService {

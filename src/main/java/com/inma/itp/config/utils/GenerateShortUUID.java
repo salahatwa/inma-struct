@@ -2,7 +2,7 @@ package com.inma.itp.config.utils;
 
 import java.util.UUID;
 
-import org.springframework.util.DigestUtils;
+import com.inma.itp.config.ApplicationContextProvider;
 
 /**
  * singleton for generating Random Unique UUID
@@ -12,12 +12,15 @@ import org.springframework.util.DigestUtils;
  */
 public class GenerateShortUUID {
 
+	private static String channel = ApplicationContextProvider.getEnvironmentProperty("inma.channel", String.class,
+			"");
+
 	public static String id() {
-		String id = "";
-		String ts = String.valueOf(System.currentTimeMillis());
-		String rand = UUID.randomUUID().toString();
-		id = String.format("%s", DigestUtils.md5DigestAsHex((ts + rand).getBytes()));
-		return id;
+		return channel + UUID.randomUUID().toString().replace("-", "");
+	}
+
+	public static String getChannel() {
+		return channel;
 	}
 
 }

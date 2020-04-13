@@ -13,10 +13,10 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
 import com.inma.itp.auth.dao.AuthDao;
-import com.inma.itp.auth.models.dto.UserData;
-import com.inma.itp.auth.models.queue.UsrAuthentRq;
+import com.inma.itp.auth.model.bussinessObject.UsrAuthentRq;
+import com.inma.itp.auth.model.dto.UserData;
 import com.inma.itp.config.exception.ResourceNotFoundException;
-import com.inma.itp.config.models.User;
+import com.inma.itp.config.model.User;
 import com.inma.itp.config.secuirty.JwtTokenProvider;
 import com.inma.itp.config.secuirty.UserPrincipal;
 import com.inma.itp.config.utils.Constants;

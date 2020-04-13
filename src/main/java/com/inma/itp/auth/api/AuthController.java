@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.inma.itp.auth.models.dto.LoginRequest;
+import com.inma.itp.auth.model.dto.LoginRequest;
 import com.inma.itp.auth.service.AuthService;
 
 @RestController

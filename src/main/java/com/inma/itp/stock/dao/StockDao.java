@@ -6,9 +6,9 @@ import org.springframework.stereotype.Service;
 
 import com.inma.itp.config.messaging.MessageTemplateService;
 import com.inma.itp.config.utils.Constants;
-import com.inma.itp.stock.models.dto.StockDetails;
-import com.inma.itp.stock.models.queue.SecsInqRq;
-import com.inma.itp.stock.models.queue.SecsInqRs;
+import com.inma.itp.stock.model.dto.StockDetails;
+import com.inma.itp.stock.models.bussinessObject.SecsInqRq;
+import com.inma.itp.stock.models.bussinessObject.SecsInqRs;
 
 @Service
 public class StockDao {

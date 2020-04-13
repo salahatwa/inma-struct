@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import com.inma.itp.config.messaging.MessageTemplateService;
 import com.inma.itp.config.utils.Constants;
-import com.inma.itp.order.models.dto.CommissionResponse;
-import com.inma.itp.order.models.queue.ETradeOrdMngRq;
-import com.inma.itp.order.models.queue.ETradeOrdMngRs;
-import com.inma.itp.order.models.queue.ETradeOrdsInqRq;
-import com.inma.itp.order.models.queue.ETradeOrdsInqRs;
-import com.inma.itp.order.models.queue.ETradePreOrdDtlsInqRq;
-import com.inma.itp.order.models.queue.ETradePreOrdDtlsInqRs;
+import com.inma.itp.order.model.bussinessObject.ETradeOrdMngRq;
+import com.inma.itp.order.model.bussinessObject.ETradeOrdMngRs;
+import com.inma.itp.order.model.bussinessObject.ETradeOrdsInqRq;
+import com.inma.itp.order.model.bussinessObject.ETradeOrdsInqRs;
+import com.inma.itp.order.model.bussinessObject.ETradePreOrdDtlsInqRq;
+import com.inma.itp.order.model.bussinessObject.ETradePreOrdDtlsInqRs;
+import com.inma.itp.order.model.dto.CommissionResponse;
 
 @Service
 public class OrderDao {
@@ -53,7 +53,7 @@ public class OrderDao {
 		return rs.getSpRefNum();
 	}
 
-	public List<com.inma.itp.order.models.queue.ETradeOrdsInqRs.ETradeOrdDtls> getOrderStatus(String userId,
+	public List<com.inma.itp.order.model.bussinessObject.ETradeOrdsInqRs.ETradeOrdDtls> getOrderStatus(String userId,
 			ETradeOrdsInqRq rq) {
 		rq.setFuncId(Constants.FUNCTION_ORD_INQ);
 		rq.setAgentId(userId);
@@ -64,7 +64,7 @@ public class OrderDao {
 	}
 
 	@PostMapping("/inquiry")
-	public List<com.inma.itp.order.models.queue.ETradeOrdsInqRs.ETradeOrdDtls> inquiryOrders(String userId,
+	public List<com.inma.itp.order.model.bussinessObject.ETradeOrdsInqRs.ETradeOrdDtls> inquiryOrders(String userId,
 			ETradeOrdsInqRq rq) {
 
 		rq.setFuncId(Constants.FUNCTION_ORD_INQ);

@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.inma.itp.config.annotations.CurrentUser;
 import com.inma.itp.config.secuirty.UserPrincipal;
-import com.inma.itp.order.models.dto.CommissionRequest;
-import com.inma.itp.order.models.dto.OrderInquiry;
-import com.inma.itp.order.models.dto.OrderRequest;
+import com.inma.itp.order.model.dto.CommissionRequest;
+import com.inma.itp.order.model.dto.OrderInquiry;
+import com.inma.itp.order.model.dto.OrderRequest;
 import com.inma.itp.order.service.OrderService;
 
 /**

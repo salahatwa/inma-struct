@@ -10,7 +10,7 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.inma.itp.config.models.User;
+import com.inma.itp.config.model.User;
 /**
  * Security Object implementation
  * @author ssatwa
