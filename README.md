@@ -6,3 +6,5 @@ System.setProperty(
 ,
 "1"
 );
+
+System.setProperty("PLAYWRIGHT_BROWSERS_PATH", "0");
