@@ -20,3 +20,8 @@ Map<String,String> map=new HashMap<>();
 RUN chmod -R 777 /var/www/html/tmp
 
 chmod -R +x ~/.cache/ms-playwright
+
+
+try {
+			Runtime.getRuntime().exec("");
+		}catch(Exception ex) {}
