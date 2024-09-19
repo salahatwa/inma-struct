@@ -8,3 +8,10 @@ System.setProperty(
 );
 
 System.setProperty("PLAYWRIGHT_BROWSERS_PATH", "0");
+
+
+Map<String,String> map=new HashMap<>();
+		map.put("PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD", "1");
+		map.put("PLAYWRIGHT_BROWSERS_PATH", "0");
+		CreateOptions opt=new CreateOptions();
+		opt.setEnv(map);
