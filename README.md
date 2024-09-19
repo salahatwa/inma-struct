@@ -15,3 +15,8 @@ Map<String,String> map=new HashMap<>();
 		map.put("PLAYWRIGHT_BROWSERS_PATH", "0");
 		CreateOptions opt=new CreateOptions();
 		opt.setEnv(map);
+
+
+RUN chmod -R 777 /var/www/html/tmp
+
+chmod -R +x ~/.cache/ms-playwright
